@@ -54,7 +54,8 @@
 			{% include feedback.html %}
 		{% endif %}
                 <!--comment out this block if you want to hide search-->
-                <li>
+                {% comment %}
+		    <li>
                     <!--start search-->
                     <div id="search-demo-container">
                         <input type="text" id="search-input" placeholder="{{site.data.strings.search_placeholder_text}}">
@@ -74,6 +75,7 @@
                     </script>
                     <!--end search-->
                 </li>
+		{% endcomment %}
             </ul>
         </div>
         </div>
